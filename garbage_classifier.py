@@ -50,7 +50,7 @@ class TorchVisionDataset(Dataset):
 
 
     
-images = glob.glob("data2/*/*/*")
+images = glob.glob("data/*/*/*")
 images = np.array(images)
 labels = np.array([f.split("\\")[-2] for f in images])
 
